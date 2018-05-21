@@ -7,7 +7,6 @@ TARGET_SCREEN_HEIGHT := 960
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/nitrogen/products/common.mk)
-$(call inherit-product, vendor/nitrogen/config/utils.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
