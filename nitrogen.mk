@@ -6,10 +6,11 @@ TARGET_SCREEN_WIDTH := 540
 TARGET_SCREEN_HEIGHT := 960
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/nitrogen/products/common.mk)
+$(call inherit-product, vendor/nitrogen/config/utils.mk)
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_MANUFACTURER := samsung
